@@ -14,7 +14,7 @@ const main = async () => {
   console.log('Count Users.');
 
   const total = await Query.make('users')
-    .where('email', 'like', '@yahoo.com') // you can also do something like: where('email', 'not like', '@yahoo.com') => whereContains would look cleaner though...
+    .where('email', 'like', '@yahoo.com') // you can also do something like: where('email', 'not like', '@yahoo.com') => whereContains('email', '@yahoo.com') would look cleaner though...
     .count();
 
   console.log(total);
