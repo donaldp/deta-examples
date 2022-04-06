@@ -27,7 +27,7 @@ cp .env.example .env
 
 When done, head over to [Deta](https://web.deta.sh/) > Settings and create a new Project Key.
 
-After creating the key, add it to the `.env`:
+After creating the key, add it to the `.env` file:
 
 ```emv
 DETA_KEY=<PROJECT-KEY>
