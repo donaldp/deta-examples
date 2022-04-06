@@ -14,7 +14,7 @@ class DBSeed < Command
 
 		process.exit!
 
-const app = new Application('Deta App', '1.0')
+const app = new Application('Deta Examples', '1.0')
 
 app.register(DBSeed)
 
