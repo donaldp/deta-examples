@@ -6,10 +6,9 @@ module.exports.UserFactory = class UserFactory extends Factory {
    * Schema mapping.
    *
    * @param {Faker} faker
-   * @param {Number} index
    * @returns {object}
    */
-  schema(faker, index) {
+  schema(faker) {
     return {
       first_name: faker.name.firstName(),
       last_name: faker.name.lastName(),

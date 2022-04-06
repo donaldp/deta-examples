@@ -46,10 +46,9 @@ module.exports.Factory = class Factory {
    * Schema mapping.
    *
    * @param {Faker} faker
-   * @param {Number} index
    * @returns {object}
    */
-  schema(faker, index) {
+  schema(faker) {
     return {
 
     }
@@ -76,7 +75,7 @@ module.exports.Factory = class Factory {
     const documents = [];
 
     for (let index = 0; index < this._count; index++) {
-      const results = await this.#persist(this.schema(faker, index++));
+      const results = await this.#persist(this.schema(faker));
 
       documents.push(results);
     }
